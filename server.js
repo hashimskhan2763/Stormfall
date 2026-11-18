@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const { WebSocketServer, WebSocket } = require('ws');
 const PORT = Number(process.env.PORT || 8080);
-const GAME = path.join(__dirname, 'stormfall_royale_expanded.html');
+const GAME = path.join(__dirname, 'stormfall.html');
 const rooms = new Map();
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
